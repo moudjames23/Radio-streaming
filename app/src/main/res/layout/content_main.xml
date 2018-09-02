@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".activity.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/nav_header1"
+        android:scaleType="fitXY"/>
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:tools="http://schemas.android.com/tools"
+
+        app:cardBackgroundColor="@android:color/white"
+        app:cardCornerRadius="0dp"
+        android:padding="10dp"
+        android:background="@color/colorAccent"
+        android:layout_alignParentBottom="true"
+        app:cardElevation="8dp">
+
+
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:padding="5dp"
+          android:background="@color/colorAccent">
+
+          <de.hdodenhof.circleimageview.CircleImageView
+              android:id="@+id/image_view_chat"
+              android:layout_width="65dp"
+              android:layout_height="65dp"
+              android:layout_gravity="left"
+              android:src="@drawable/logo"
+              app:civ_border_color="@android:color/transparent"
+              android:layout_centerVertical="true"
+              app:civ_border_width="2dp" />
+
+          <LinearLayout
+              android:layout_toRightOf="@id/image_view_chat"
+              android:id="@+id/ll_show_info"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              android:padding="8dp"
+              android:weightSum="2"
+              >
+
+              <LinearLayout
+                  android:layout_width="0dp"
+                  android:layout_height="match_parent"
+                  android:orientation="vertical"
+                  android:layout_weight="2">
+
+                  <TextView
+                      android:id="@+id/radioName"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:fontFamily="sans-serif-condensed"
+                      android:text="@string/app_name"
+                      android:textAppearance="?android:textAppearanceSmall"
+                      android:textColor="@android:color/white"
+                      android:textSize="18sp" />
+
+                  <TextView
+                      android:id="@+id/meta"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:fontFamily="sans-serif-condensed"
+                      android:text="@string/slogan"
+                      android:textAppearance="?android:textAppearanceSmall"
+                      android:textColor="@android:color/white"
+                      android:textSize="18sp" />
+
+              </LinearLayout>
+
+
+
+
+          </LinearLayout>
+
+          <ImageView
+              android:id="@+id/play_pause"
+             android:layout_alignParentRight="true"
+              android:layout_width="72dp"
+              android:layout_height="72dp"
+              android:layout_gravity="right"
+              android:padding="24dp"
+              android:scaleType="fitXY"
+              android:src="@drawable/ic_play_arrow_white_24dp" />
+
+
+      </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>

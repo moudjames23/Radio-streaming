@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Fouta Info International</string>
+
+
+    <string name="action_about">A propos</string>
+    <string name="slogan">Ko fii ein fow !</string>
+    <string name="descriptionRadio">
+        Fouta info international
+C\'est une radioweb interactive à but nonlucratif. Elle est basée à New York, aux USA. Fouta info emet principalement en PULAR mais aussi en Français et en Anglais.
+        La programmation repose sur les interets et préoccupations des auditeurs qui ont la latitude de s\'exprimer librement soit sur des sujets de debats introduits par les moderateurs soit proposer des invités et des themes de debat.
+        Le caractère Web permet à Fouta info d\'être present sur tous les continents à travers des auditeurs qui peuvent suivrent les émissions en directe ou en différé en utilisant plusieurs applications accessibles par telephone, tablettes ou ordinateurs
+    </string>
+    <string name="title_activity_about">A Propos</string>
+
+
+</resources>
